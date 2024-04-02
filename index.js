@@ -10,8 +10,8 @@ const handleClick = (evt, index) => {
     if (!isGameOver && (board[index] == "e")) {
         evt.target.innerHTML = turn
         board[index] = turn
-        changeTurn()
         checkWin()
+        changeTurn()
     }
 }
 
